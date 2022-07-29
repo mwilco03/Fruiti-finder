@@ -19,13 +19,6 @@ python3 -m pip install -r requirements.txt
 ```
 
 
----
-
-
-## 🔎 Usage
-
-```
-
 ## 📢 Mentions
 - This project uses some of the research and code used at [nccgroup](https://github.com/nccgroup/blackboxprotobuf).
 - This project uses some of the research and code used at [GONZOsint](https://github.com/GONZOsint/geowifi).
