@@ -1,9 +1,9 @@
 
-# 📡💘🌎 | Fruiti-Finder  
+# 🍎🌎 | Fruiti-Finder  
 Search WiFi geolocation data by BSSID databases.
 
 ### 💾 Databases:
-- Apple
+- 🍎
 
 
 ## ✔️ Prerequisites
