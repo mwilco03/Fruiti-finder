@@ -14,6 +14,6 @@ def apple_bssid(bssid):
                }
     data = '\x00\x01\x00\x05en_US\x00\x13com.apple.locationd\x00\x0a8.1.12B411\x00\x00\x00\x01\x00\x00\x00' + chr(len(data_bssid)) + data_bssid
     response = requests.post('https://gs-loc.apple.com/clls/wloc', headers=headers, data=data)
-    x['lat'] = blackboxprotobuf.decode_message(response.content)[0]['2'][0]['2']['1']
-    x['lon'] = blackboxprotobuf.decode_message(response.content)[0]['2'][0]['2']['2']
+    x['lat'] = blackboxprotobuf.decode_message(response.content)[0]['2'][0]['2']['1']/10**8
+    x['lon'] = blackboxprotobuf.decode_message(response.content)[0]['2'][0]['2']['2']/10**8
     return x
