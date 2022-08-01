@@ -18,7 +18,7 @@ def apple_bssid(bssid):
     return x
 
 def main():
-    found = apple_bssid(sys.argv[0])
+    found = apple_bssid(sys.argv[1])
     if x['error']:
         print("Nothing found.")
     else: 
