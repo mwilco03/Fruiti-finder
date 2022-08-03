@@ -3,7 +3,6 @@ import blackboxprotobuf
 import sys
 
 def apple_bssid(bssid):
-    print(bssid)
     x = {}
     x['bssid'] = bssid
     data_bssid = f'\x12\x13\n\x11{bssid}\x18\x00\x20\01'
