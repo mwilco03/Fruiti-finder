@@ -19,7 +19,7 @@ def apple_bssid(bssid):
 
 def main():
     found = apple_bssid(sys.argv[1])
-    if x['error']:
+    if found['error']:
         print("Nothing found.")
     else: 
         print("found " + found['bssid'] + " at https://google.com/maps/dir/" + str(found['lat']) + ',' + str(found['lon']))
