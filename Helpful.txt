@@ -1,0 +1,17 @@
+####Windows CMD
+#netsh wlan show network mode=Bssid|findstr BSSID
+####Windows Pwsh
+#find-Module Get-WLANs|%{install-module $_ -scope currentuser}; get-wlans
+####Mac
+#/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
+####Nix?
+#nmcli -f SSID,BSSID,ACTIVE dev wifi list
+#nm-tool
+#iwlist wlan0 scanning
+##########
+####To compile python 
+#pip install nuikta 
+#py -m nuitka .\fruitifinder.py  --onefile --include-package=requests --include-package=blackboxprotobuf
+####To compile Powershell
+#install-module ps2exe -scope currentuser
+#ps2exe -inputfile ~\Documents\WindowsPowerShell\Modules\Get-WLANs\0.0.4\get-wlans.ps1 -outputfile getwlans.exe 
