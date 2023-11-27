@@ -15,3 +15,5 @@
 ####To compile Powershell
 #install-module ps2exe -scope currentuser
 #ps2exe -inputfile ~\Documents\WindowsPowerShell\Modules\Get-WLANs\0.0.4\get-wlans.ps1 -outputfile getwlans.exe 
+whoami 
+python3 -m http.server
