@@ -7,4 +7,4 @@ cd /etc/ && sudo python3 -m http.server &
 xmrig --bench=1M &
 sleep 4;
 pkill -9 xmrig;
-
+nmap 127.0.0.1 &
