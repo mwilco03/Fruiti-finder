@@ -5,7 +5,7 @@ REPO="mwilco03/Fruiti-finder"
 BRANCH="main"
 DIRECTORY="dockerized"
 DEST_DIR="fruitifinder"
-
+PORT=9080
 # Function to download a file from GitHub
 download_file() {
   local file_url=$1
@@ -51,4 +51,5 @@ cd $DEST_DIR
 echo "Building the image."
 docker build -f ./Dockerfile -t mwilco03/fruitifinder .
 echo "Running the container."
-docker run -p 9080:9080 --rm -d mwilco03/fruitifinder 
+docker run -p $PORT:$PORT --rm -d --name fruitifinder mwilco03/fruitifinder 
+HOST_IP=$(hostname -I | awk '{print $1}') && echo "curl 'http://$HOST_IP:$PORT/scan?bssid=DE:AD:BE:EF'" 
