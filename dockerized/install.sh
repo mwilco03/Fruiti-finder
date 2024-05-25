@@ -47,3 +47,8 @@ mkdir -p "$DEST_DIR"
 download_directory "$API_URL" "$DEST_DIR"
 
 echo "Directory $DIRECTORY has been downloaded to $DEST_DIR."
+cd $DEST_DIR
+echo "Building the image."
+docker build -f ./Dockerfile -t mwilco03/fruitifinder .
+echo "Running the container."
+docker run -p 9080:9080 --rm -d mwilco03/fruitifinder 
